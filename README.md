@@ -1,6 +1,4 @@
 
-
-````markdown
 # 🍅 FocusMate - Pomodoro Productivity Tracker
 
 A Chrome Extension + FastAPI backend project that helps students and professionals stay productive using Pomodoro sessions. It tracks browsing activity during focus time, classifies websites as productive or unproductive, and provides daily productivity insights with motivational quotes.  
@@ -13,12 +11,12 @@ This was built as a **6-hour hackathon demo** to showcase FastAPI + browser exte
 
 ---
 
-## 🎥 Link to product walkthrough
+##  Link to product walkthrough
 [Demo Video](Link_Here)
 
 ---
 
-## ⚙️ How it Works ?
+##  How it Works ?
 1. Start the **Pomodoro timer** (25/5, 45/10, 60/15) from the Chrome extension.  
 2. During the timer, the extension logs your active tab URLs and sends them to the FastAPI backend.  
 3. The backend classifies sites as **productive / unproductive** and stores the stats.  
@@ -28,17 +26,16 @@ This was built as a **6-hour hackathon demo** to showcase FastAPI + browser exte
    - Comparison with yesterday  
    - Motivational quote  
 
----
 
-## 📚 Libraries used
+
+##  Libraries used
 - **FastAPI** – Web framework for the backend  
 - **Uvicorn** – ASGI server  
 - **Requests** – API communication  
 - **Chrome Extension APIs (MV3)** – Tabs, storage, background services  
 
----
 
-## 🔧 How to configure
+##  How to configure
 1. Clone the repo.  
 2. Install backend dependencies:  
    ```bash
@@ -53,9 +50,8 @@ This was built as a **6-hour hackathon demo** to showcase FastAPI + browser exte
    ```
 4. Load `extension/` folder in Chrome → `chrome://extensions/` → Load unpacked.
 
----
 
-## ▶️ How to Run
+##  How to Run
 
 1. Start backend server (`http://127.0.0.1:8000`).
 2. Open Chrome, start a Pomodoro session via extension.
