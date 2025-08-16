@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusMate Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🍅 FocusMate</h1>
+            <p class="subtitle">Pomodoro Productivity Tracker</p>
+        </div>
+
+        <!-- User Settings -->
+        <div class="user-section">
+            <label for="username">User:</label>
+            <input type="text" id="username" placeholder="guest" value="guest" maxlength="20">
+        </div>
+
+        <!-- Preset Selection -->
+        <div class="preset-section">
+            <label for="preset">Choose Preset:</label>
+            <select id="preset">
+                <option value="25,5">25/5 - Classic (25min work, 5min break)</option>
+                <option value="45,10">45/10 - Extended (45min work, 10min break)</option>
+                <option value="60,15">60/15 - Deep Focus (60min work, 15min break)</option>
+            </select>
+        </div>
+
+        <!-- Timer Display -->
+        <div class="timer-section">
+            <div class="timer-display">
+                <span id="timer">25:00</span>
+            </div>
+            <div class="status">
+                <span id="status">Ready to Start</span>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start</button>
+            <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+            <button id="resetBtn" class="btn btn-secondary" disabled>Reset</button>
+            <button id="finishBtn" class="btn btn-success" disabled>Finish</button>
+        </div>
+
+        <!-- Settings -->
+        <div class="settings-section">
+            <label>
+                <input type="checkbox" id="loopPomodoro" checked>
+                Auto-continue cycles
+            </label>
+            <div class="log-interval">
+                <label for="logInterval">Log every:</label>
+                <select id="logInterval">
+                    <option value="15">15 seconds</option>
+                    <option value="30" selected>30 seconds</option>
+                    <option value="60">60 seconds</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Analysis Results (hidden by default) -->
+        <div id="analysisSection" class="analysis-section hidden">
+            <h3>📊 Today's Analysis</h3>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Productive Time:</span>
+                    <span id="productiveTime" class="stat-value">0 min</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Productivity:</span>
+                    <span id="productivityPercent" class="stat-value">0%</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">vs Yesterday:</span>
+                    <span id="deltaPercent" class="stat-value">N/A</span>
+                </div>
+            </div>
+            
+            <div class="quote-section">
+                <blockquote id="motivationalQuote">
+                    "Focus today, shine tomorrow."
+                </blockquote>
+            </div>
+
+            <div class="sites-section">
+                <h4>Top Sites:</h4>
+                <div id="sitesList" class="sites-list">
+                    <!-- Sites will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <small>Stay focused, stay productive! 🚀</small>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
