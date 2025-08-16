@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍅 FocusMate</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff4b2b, #ff6a00);
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+
+    button {
+      padding: 14px 36px;
+      border: none;
+      border-radius: 50px;
+      background: #fff;
+      color: #ff4b2b;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff4b2b;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+      transform: translateY(-3px);
+    }
+
+    .emoji {
+      font-size: 4rem;
+      margin-bottom: 15px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">🍅</div>
+    <h1>FocusMate</h1>
+    <button onclick="redirect()">View on GitHub</button>
+  </div>
+
+  <script>
+    function redirect() {
+      window.location.href = "https://github.com/Adithya6ramesh/FocusMate";
+    }
+  </script>
+</body>
+</html>
