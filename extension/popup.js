@@ -107,13 +107,17 @@ function setupEventListeners() {
 function handlePresetChange() {
     const [work, breakTime] = elements.preset.value.split(',').map(Number);
     
-    // Only update if timer is idle
+    // Always update the stored durations
+    currentState.workDuration = work * 60;
+    currentState.breakDuration = breakTime * 60;
+    
+    // If timer is idle, update the display immediately
     if (currentState.mode === 'idle') {
-        currentState.workDuration = work * 60;
-        currentState.breakDuration = breakTime * 60;
         currentState.timeLeft = work * 60;
         updateTimerDisplay();
     }
+    
+    console.log(`Preset changed to ${work}/${breakTime} minutes`);
 }
 
 /**
