@@ -1,4 +1,4 @@
-Got it 🚀 — here’s your **README.md** in the style of the template you showed in the screenshot (short, hackathon-style, with just the essentials and placeholders for video/demo).
+
 
 ````markdown
 # 🍅 FocusMate - Pomodoro Productivity Tracker
