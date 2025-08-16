@@ -2,7 +2,7 @@
 # 🍅 FocusMate - Pomodoro Productivity Tracker
 
 A Chrome Extension + FastAPI backend project that helps students and professionals stay productive using Pomodoro sessions. It tracks browsing activity during focus time, classifies websites as productive or unproductive, and provides daily productivity insights with motivational quotes.  
-This was built as a **6-hour hackathon demo** to showcase FastAPI + browser extension integration.
+This was built  FastAPI + browser extension integration.
 
 ---
 
