@@ -12,7 +12,7 @@ This was built as a **6-hour hackathon demo** to showcase FastAPI + browser exte
 ---
 
 ##  Link to product walkthrough
-[Demo Video](Link_Here)
+[Demo Video]https://www.loom.com/share/e1831cf4e7a54558a947e9e12fc9672a?sid=234e1b97-70ff-4589-af72-096667623940
 
 ---
 
