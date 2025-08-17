@@ -58,5 +58,4 @@ This was built  FastAPI + browser extension integration.
 3. Browse normally → Extension logs activity.
 4. At the end of the session, click **Finish** to view analysis and stats.
 
- me to also make a **super-short "elevator pitch" style** README (just problem + solution + demo link, 10 lines max) so you can quickly show judges in the hackathon?
-```
+ 
